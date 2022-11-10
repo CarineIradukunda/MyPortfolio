@@ -7,7 +7,6 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ContactComponent } from './contact/contact.component';
-
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -15,7 +14,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatCardModule } from '@angular/material/card';
-
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatTooltipModule } from '@angular/material/tooltip';
@@ -23,7 +21,6 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatRadioModule } from '@angular/material/radio';
 import { MatListModule } from '@angular/material/list';
 import { MatDialogModule } from '@angular/material/dialog';
-
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTableModule } from '@angular/material/table';
@@ -36,9 +33,7 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EmailService } from './service/email.service';
-import { ComingsoonComponent } from './comingsoon/comingsoon.component';
-// import { MatNativeDateModule } from '@angular/material';
-// import {  MatMomentDateModule } from '@angular/material'
+
 
 @NgModule({
   declarations: [
@@ -52,7 +47,7 @@ import { ComingsoonComponent } from './comingsoon/comingsoon.component';
     EducationComponent,
     ExperienceComponent,
     PageNotFoundComponent,
-    ComingsoonComponent,
+
 
   ],
   imports: [

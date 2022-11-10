@@ -15,8 +15,7 @@ export class HomeComponent implements OnInit {
   downloadMyFile() {
     const link = document.createElement('a');
     link.setAttribute('target', '_blank');
-    link.setAttribute('href', '');
-    link.setAttribute('download', `CarineSebarindaIradukunda_CV.pdf`);
+    link.setAttribute('href', 'https://drive.google.com/file/d/1gPFQALP-H1_RJoCsI9HD8qe2-V1cf_0k/view?usp=sharing');
     document.body.appendChild(link);
     link.click();
     link.remove();
