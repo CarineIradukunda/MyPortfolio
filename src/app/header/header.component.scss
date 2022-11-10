@@ -1,0 +1,32 @@
+$lt-gray: #ddd;
+$background-dark: #000000;
+$background-light: #fdfdfd;
+$background-pale: #cfe9c4;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+    margin: 0px auto;
+    padding: $pad-up-down $pad-left-right;
+}
+
+.jumbotron {
+    @include zero-margin(60px, 20px);
+    background: $background-light ;
+    color: floralwhite;
+    min-height: 100px;
+}
+
+$background-moredark: #58626b;
+
+.active {
+    background: $background-moredark;
+}
+
+:is(.mat-button):hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+#test{
+    background-image: url("./bgg.jpg");
+}

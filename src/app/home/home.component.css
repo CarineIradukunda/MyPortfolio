@@ -1,0 +1,97 @@
+section {
+    display: table;
+}
+
+.example-label {
+    display: table-cell;
+    font-size: 14px;
+    margin-left: 8px;
+    min-width: 120px;
+}
+
+.example-button-row {
+    display: table-cell;
+    width: 490px;
+    
+}
+
+.example-button-row .mat-button-base {
+    margin: 70px 8px 8px 0;
+    justify-content: center;
+    background-color: #58626b;
+        
+}
+
+.example-flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.example-button-container {
+    display: flex;
+    justify-content: center;
+    width: 120px;
+}
+
+#pro {
+    float: left;
+    margin: -30px 60px 0 0;
+filter: drop-shadow(0 -6mm 4mm rgb(60, 60, 61));
+
+}
+
+:is(.mat-button-base):hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.cloud {
+
+    /* width: 95%; */
+   height: 500px;
+    background: #00070f;
+    box-shadow: 10px 10px#02101d;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2%;
+}
+
+
+
+
+
+
+.container {
+    display: inline-block;
+}
+
+.typed-out {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    animation: typing 3s steps(20, end) forwards, blinking .8s infinite;
+    font-size: 1.6rem;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking {
+    from {
+        border-color: transparent
+    }
+
+    to {
+        border-color: orange;
+    }
+}
+

@@ -1,0 +1,70 @@
+
+<div style="height: 85vh;">
+    <mat-toolbar color="primary" style="background-color:#131f0d;">
+        <mat-toolbar-row style="display: flex;
+  justify-content: center">
+            <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+                <mat-icon>menu</mat-icon>
+            </button>
+            <!-- <span>CARINE S. IRADUKUNDA</span> -->
+            <span class="example-spacer"></span>
+            <div fxShow="true" fxHide.lt-md="true">
+
+                <a mat-button routerLink="/home" routerLinkActive="active"><mat-icon>home</mat-icon>
+                    HOME</a>
+                <a mat-button routerLink="/education" routerLinkActive="active"><mat-icon>school</mat-icon>
+                    EDUCATION</a>
+                    <a mat-button routerLink="/experience" routerLinkActive="active"><mat-icon>work</mat-icon>
+                        EXPERIENCE</a>
+                <a mat-button routerLink="/projects" routerLinkActive="active"><mat-icon>list</mat-icon>
+                    NOTABLE PROJECTS</a>
+                <a mat-button routerLink="/contact" routerLinkActive="active"><mat-icon>info</mat-icon>
+                    CONTACT</a>
+    <!-- <button (click)="scroll(target)">Scroll To Div</button> -->
+                <!-- <a mat-button style="float:right"><img src="../assets/images/dark.png" style="width:20px">Dark
+                    mode </a> -->
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+<div></div>
+    <mat-sidenav-container fxFlexFill >
+        <mat-sidenav #sidenav>
+            <mat-nav-list>
+                <a mat-list-item routerLink="/home" routerLinkActive="active">
+                    <mat-icon>home</mat-icon>
+                    HOME
+                </a>
+                <a routerLink="/education" routerLinkActive="active" mat-list-item>
+                    <mat-icon>school</mat-icon>
+                    EDUCATION
+                </a>
+                <a routerLink="/experience" routerLinkActive="active" mat-list-item>
+                    <mat-icon>work</mat-icon>
+                    EXPERIENCE
+                </a>
+                <a routerLink="/projects" routerLinkActive="active" mat-list-item>
+                    <mat-icon>list</mat-icon>
+                    NOTABLE PROJECTS
+                </a>
+                <a routerLink="/contact" routerLinkActive="active" mat-list-item>
+                    <mat-icon>info</mat-icon>
+                    CONTACT
+                </a>
+                <!-- <a mat-button style="margin-left: 0%;"><img src="../assets/images/dark.png" style="width:20px">Dark mode
+                </a> -->
+                <a (click)="sidenav.toggle()" mat-list-item>
+                    <mat-icon>close</mat-icon> Close
+                </a>
+            </mat-nav-list>
+        </mat-sidenav>
+        <mat-sidenav-content fxFlexFill>
+            <router-outlet></router-outlet>
+
+          
+          
+
+        </mat-sidenav-content>
+    </mat-sidenav-container>
+
+
+</div>
