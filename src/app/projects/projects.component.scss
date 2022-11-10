@@ -1,66 +1,121 @@
 
-   .grid-container {
-       display: grid;
-       grid-template-columns: auto auto auto auto;
-       grid-gap: 30px;
-       padding: 20px;
-       width: 250px;
-       margin-left: 80px;
-   }
+//    .grid-container {
+//        display: grid;
+//        grid-template-columns: auto auto auto auto;
+//        grid-gap: 30px;
+//        padding: 20px;
+//        width: 250px;
+//        margin-left: 80px;
+//    }
 
-   .grid-container>div {
+//    .grid-container>div {
 
-       padding: 20px 0;
-       font-size: 15px;
-       color: white;
-       border-radius: 15px;
-       opacity: 0.8;
-       transition: 0.3s;
-    background-color: #1a1b1d;
-   }
+//        padding: 20px 0;
+//        font-size: 15px;
+//        color: white;
+//        border-radius: 15px;
+//        opacity: 0.8;
+//        transition: 0.3s;
+//     background-color: #1a1b1d;
+//    }
 
-   .grid-container>div:hover {
-       opacity: 1;
-       transform: scale(1.1);
-   }
+//    .grid-container>div:hover {
+//        opacity: 1;
+//        transform: scale(1.1);
+//    }
 
-.mat-button{
-    background-color: #787c80;
-}
+ .mat-button{
+     background-color: #787c80;
+ }
 
 
-.placeh{
+ .placeh{
+     background-color: #303133
+     ;border-radius: 5px;
+     font-size:12pt;
+     padding: 5px;
+     margin:4px;
+     font-family:system-ui;
+ }
 
-    background-color: #303133
-    ;border-radius: 5px;
-    font-size:12pt;
-    padding: 5px;
-    margin:4px;
-    font-family:system-ui;
+ .imgs{
+     border-radius: 5px;
+     margin-left: 20px;
+     width: 350px;
+ }
+// .flex-container {
+//     display: flex;
+//     flex-wrap: wrap;
+//     gap: 1rem;
+// }
 
-}
+// .cloud {
 
-.imgs{
-    border-radius: 5px;
-    margin-left: 20px;
-    width: 350px;
-}
+//     height: 800px;
 
-.flex-container {
+//     background: #00070f;
+//     box-shadow: 10px 10px#02101d;
+//     border-radius: 50px;
+//     color: rgb(255, 255, 255);
+//     justify-content: center;
+//     align-items: center;
+//     display: flex;
+// }
+
+
+
+.row {
+    //width: 87%;
+    display: -ms-flexbox;
+    /* IE10 */
     display: flex;
+    -ms-flex-wrap: wrap;
+    /* IE10 */
     flex-wrap: wrap;
-    gap: 1rem;
+    padding: 0 4px;
+// margin-left: 7.6%;
+// margin-right: 10%;
+margin-top: 5%;
+//background: #7a7f85;
 }
 
-.cloud {
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%;
+    /* IE10 */
+    flex: 5%;
+    //max-width: 20%;
+    //padding: 0 4px;
+    //opacity: 0.8;
+    //transition: 0.3s;
+   
+}
 
-    height: 800px;
+    // .column>div:hover {
+    //     opacity: 1;
+    //     transform: scale(1.1);
+    // }
+.column img {
+    margin-top: 0%;
+    vertical-align: middle;
+    width: 80%;
+   
+}
 
-    background: #00070f;
-    box-shadow: 10px 10px#02101d;
-    border-radius: 50px;
-    color: rgb(255, 255, 255);
-    justify-content: center;
-    align-items: center;
-    display: flex;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
 }
