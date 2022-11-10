@@ -50,11 +50,11 @@ filter: drop-shadow(0 -6mm 4mm rgb(60, 60, 61));
 
     /* width: 95%; */
    height: 500px;
-    background: #00070f;
-    box-shadow: 10px 10px#02101d;
-    border-radius: 50px;
+    /* background: #00070f; */
+    /* box-shadow: 10px 10px#02101d;
+    border-radius: 50px; */
     color: rgb(255, 255, 255);
-    margin-bottom: 2%;
+    margin-bottom: 0%;
 }
 
 

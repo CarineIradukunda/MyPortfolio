@@ -36,6 +36,7 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { EmailService } from './service/email.service';
+import { ComingsoonComponent } from './comingsoon/comingsoon.component';
 // import { MatNativeDateModule } from '@angular/material';
 // import {  MatMomentDateModule } from '@angular/material'
 
@@ -51,6 +52,7 @@ import { EmailService } from './service/email.service';
     EducationComponent,
     ExperienceComponent,
     PageNotFoundComponent,
+    ComingsoonComponent,
 
   ],
   imports: [

@@ -9,6 +9,7 @@ import { ExperienceComponent } from '../experience/experience.component';
 import { PageNotFoundComponent } from '../page-not-found/page-not-found.component';
 
 
+
 export const routes: Routes = [
     { path: 'home', component: HomeComponent },
     { path: 'projects', component: ProjectsComponent },
